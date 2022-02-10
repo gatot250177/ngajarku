@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 650px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  background: linear-gradient(to right, rgba(200,107,142,1), rgba(218,105,250,1),
+     rgba(110,125,253,1)) ;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">TARI REMO</a>
+  <div id="myLinks">
+    <a href="index.html">Menu</a>
+    <a href="sejarah.html">Sejarah</a>
+    <a href="TataGerak.html">Tata Gerak</a>
+    <a href="#tatabusana.html">Tata Busana</a>
+    <a href="pengiring.html">Pengiring</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:12px">
+  <img src="busana.jpeg" alt="">
+  <img src="busana1.jpg" alt="">
+  <audio controls>
+  <source src="audpengiring.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  <h3>Tata Busana</h3>
+  <p><b>Busana Pria </b>Terdiri atas ikat kepala merah, baju tanpa kancing yang berwarna hitam dengan gaya kerajaan pada abad ke-18, celana sebatas pertengahan betis yang dikait dengan jarum emas, sarung batik Pesisiran yang menjuntai hingga ke lutut, setagen yang diikat di pinggang, serta keris menyelip di belakang. Penari memakai dua selendang, yang mana satu dipakai di pinggang dan yang lain disematkan di bahu, dengan masing-masing tangan penari memegang masing-masing ujung selendang. Selain itu, terdapat pula gelang kaki berupa kumpulan lonceng yang dilingkarkan di pergelangan kaki.</p>
+  <p><b>Busana Putri</b>Remo Putri mempunyai busana yang berbeda dengan gaya remo yang asli. Penari memakai sanggul, memakai mekak hitam untuk menutup bagian dada, memakai rapak untuk menutup bagian pinggang sampai ke lutut, serta hanya menggunakan satu selendang saja yang disemat di bahu bahu.</p>
+  
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
